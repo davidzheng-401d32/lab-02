@@ -8,7 +8,10 @@ class List {
   
   /**
    * Method reindex - resets the index of the list from 0 to -1
-   * @ 
+   * @param acc
+   * @param val
+   * @param idx
+   * @returns {acc}
    */
   reindex() {
     let data = Object.keys(this.data).sort().reduce((acc,val,idx) => {
@@ -20,13 +23,22 @@ class List {
     this.data = data;
   }
 
+  /**
+   * Push - adds one one or more elements to the end of an array
+   * @param item 
+   * @returns {number}
+   */
   push(item) {
     if ( arguments.length === 1 ) {
       this.data[this.length++] = item;
     }
     return this.length;
   }
-
+  
+  /**
+   * Pop - removes last element from an array, and return that element 
+   * @returns {element}
+   */
   pop() {
     if ( ! this.length ) { return undefined; }
     let item = this.data[this.length - 1];
@@ -34,7 +46,11 @@ class List {
     this.length--;
     return item;
   }
-
+  
+  /**
+   * Shift - removes first element from an array, and return that element 
+   * @returns {element}
+   */
   shift() {
     if ( ! this.data[0] ) { return undefined; }
     let item = this.data[0];
@@ -43,12 +59,21 @@ class List {
     return item;
   }
 
+  /**
+   * Unshift - adds one or more element to the beginning of the array
+   *@param item
+   *@returns {number}
+   */
   unshift(item) {
     this.data[-1] = item;
     this.reindex();
     return this.length;
   }
 
+  /**
+   * forEach - excutes a provided function once for each array element 
+   * @param callback 
+   */
   forEach(callback) {
     if ( this.length ) {
       for (let i = 0; i <= this.length - 1; i++) {
@@ -57,6 +82,11 @@ class List {
     }
   }
 
+  /**
+   * map - creates a new array with the results of calling a provided function in the original array
+   * @param callback
+   * @returns {array}
+   */
   map(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -66,6 +96,11 @@ class List {
     return result;
   }
 
+  /**
+   * filter - creates a new array with all the elements that pass by the provided function
+   * @param callback
+   * @returns {array}
+   */
   filter(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -76,7 +111,13 @@ class List {
     }
     return result;
   }
-
+  
+  /**
+   * reduce - excutes a reducer function on each element of the array, resulting in a single output value
+   * @param {*} callback 
+   * @param {*} state 
+   * @returns {state}
+   */
   reduce(callback, state) {
     if ( ! this.length ) { return undefined; }
     for (let i = 0; i <= this.length - 1; i++) {
