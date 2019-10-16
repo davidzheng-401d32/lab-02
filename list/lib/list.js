@@ -5,7 +5,11 @@ class List {
     this.length = 0;
     this.data = {};
   }
-
+  
+  /**
+   * Method reindex - resets the index of the list from 0 to -1
+   * @ 
+   */
   reindex() {
     let data = Object.keys(this.data).sort().reduce((acc,val,idx) => {
       acc[idx] = this.data[val];
