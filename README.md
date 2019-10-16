@@ -5,10 +5,12 @@
 ### Author: David Zheng 
 
 ### Links and Resources
-* [submission PR](Github issues: it won't let me make a pull request. Here's the link for my branch: https://github.com/davidzheng-401d32/lab-02/tree/lab2Tuesday)
+* [submission PR](Github issues: it won't let me make a pull request back to master. Here's the link for my branch: https://github.com/davidzheng-401d32/lab-02/tree/lab2Tuesday)
+* 
 * [travis](I will update this once I fix the github issues)
+* 
 * [back-end](https://davidzheng-lab-02.herokuapp.com/) 
-* [
+* 
 * 
 
 
