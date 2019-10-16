@@ -1,30 +1,16 @@
-# LAB - 
+# LAB - 02
 
-## Project Name
+## CLasses, inheritances, functional programming 
 
-### Author: Student/Group Name
+### Author: David Zheng 
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
+* [submission PR](Github issues: it won't let me make a pull request. Here's the link for my branch: https://github.com/davidzheng-401d32/lab-02/tree/lab2Tuesday)
+* [travis](I will update this once I fix the github issues)
 * [back-end](https://davidzheng-lab-02.herokuapp.com/) 
 * [
 * 
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
-
-### Modules
-#### `modulename.js`
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
 
   
 #### Tests
